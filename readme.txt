@@ -1,10 +1,5 @@
 # Content Moderation
 
-Moderating content using vision and text 
-
-
-How to run in local enviorment
-
 To download python please click the link below 
 https://www.python.org/downloads/release/python-3810/
 
@@ -20,4 +15,6 @@ Install the requirements of this project
 Run the project
 ```python main.py```
 
+To download the model
+```gdown 1EKVlSw_dcQZFthCFLzlnHl3FKr3WKiZp```
 
