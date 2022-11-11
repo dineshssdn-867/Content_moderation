@@ -20,4 +20,9 @@ Install the requirements of this project
 Run the project
 ```python main.py```
 
+To download the model
+```gdown 1EKVlSw_dcQZFthCFLzlnHl3FKr3WKiZp```
+
+
+
 
