@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This is a crop recommendor app which will recommend crop on the bais of existing crop conditions">
+    <meta name="author" content="AI FOR YOUTH">
+    <meta name="keywords" content="AI FOR YOUTHcol">
+
+    <!-- Title Page-->
+    <title>Crop Predictor</title>
+
+    <!-- Icons font CSS-->
+    <link href="/static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="/static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="/static/css/main.css" rel="stylesheet" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/static/css/main.css" rel="stylesheet" media="all">
+    <link href="/static/css/work.css" rel="stylesheet" media="all">
+    <style>.top-nav-img[_ngcontent-bdi-c103]{max-height:51px;margin-top:3px;margin-bottom:3px;max-width:100%}.intel-logo-new[_ngcontent-bdi-c103]{max-height:40px;align-self:flex-end;margin-bottom:3px!important}.intel-img-pre[_ngcontent-bdi-c103]{align-self:flex-end;margin-bottom:8px}@media (max-width:767px){.intel-logo-new[_ngcontent-bdi-c103]{align-self:center;margin-bottom:auto!important}}@media (max-width:650px){.top-nav-img[_ngcontent-bdi-c103]{max-height:43px}}@media (max-width:515px){.intel-img-pre[_ngcontent-bdi-c103]{font-size:80%}.top-nav-img[_ngcontent-bdi-c103]{max-height:40px}.logo-1[_ngcontent-bdi-c103]{max-height:35px!important}}@media (max-width:350px){.intel-img-pre[_ngcontent-bdi-c103]{font-size:70%}.top-nav-img[_ngcontent-bdi-c103]{max-height:40px}.logo-1[_ngcontent-bdi-c103]{max-height:35px!important}}</style>
+</head>
+
+<body>
+    <app-topbar _ngcontent-bdi-c145="" _nghost-bdi-c103="" >
+        <nav _ngcontent-bdi-c103="" style="height: auto;">
+          <div class="container py-2">
+            <div _ngcontent-bdi-c103="" class="d-flex flex-row justify-content-between">
+              <div _ngcontent-bdi-c103="" class="d-flex flex-column flex-md-row align-items-center pl-0">
+                <img _ngcontent-bdi-c103="" src="https://responsibleaiforyouth.negd.in/assets/logo/digital-india-logo.png" class="top-nav-img logo-1">
+                <span _ngcontent-bdi-c103="" class="d-none d-md-block">&nbsp;
+                </span>
+                <img _ngcontent-bdi-c103="" src="https://responsibleaiforyouth.negd.in/assets/logo/negd-logo.png" class="top-nav-img logo-1">
+              </div>
+              <div _ngcontent-bdi-c103="" class="col-4 d-flex align-items-center px-0">
+                <img _ngcontent-bdi-c103="" src="https://responsibleaiforyouth.negd.in/assets/logo/gov-india-logo.png" class="ml-md-auto mx-auto mx-md-0 top-nav-img">
+              </div>
+              <div _ngcontent-bdi-c103="" class="col-4 d-flex flex-column flex-md-row align-items-center pr-0">
+                <span _ngcontent-bdi-c103="" class="intel-img-pre ml-auto mr-auto mt-auto mt-md-0">
+                </span>
+                <img _ngcontent-bdi-c103="" src="https://responsibleaiforyouth.negd.in/assets/logo/intel-logo.jpg" class="top-nav-img ml-auto ml-md-0 mb-auto logo-1 intel-logo-new">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </app-topbar>
+    <div class="page-wrapper bg-gra-03 p-b-30 p-t-30">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5 ml-5">
+                <div class="card-heading">
+                    <h2 class="title">Soil Analysis and Crop Recommendation Technology</h2>
+                </div>
+                <div class="card-body">
+                    <img src="{{url}}" alt="{{crop_name}}" class="img-fluid">
+                    <h2 class="name-crop" align="center"><b>Recommended Crop: {{crop_name}}</b></h2>
+                    <div align="center">
+                      <a href="{{ url_for('home')}}" style="color:white;"><button class="btn btn--radius-2 btn--red" type="submit">Recommend Again</a>
+                      </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="/static/vendor/select2/select2.min.js"></script>
+    <script src="/static/vendor/datepicker/moment.min.js"></script>
+    <script src="/static/vendor/datepicker/daterangepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Main JS-->
+    <script src="/static/js/global.js"></script>
+
+</body>
+
+</html>
