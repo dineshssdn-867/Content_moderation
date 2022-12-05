@@ -20,7 +20,7 @@ def check_image_toxic_url(url):
     images = np.vstack([img])
     preds = model_mobilenetv3large.predict(images, batch_size=1)
     classes =  np.argmax(preds, axis=-1)
-    if abs(preds[0][0]-preds[0][1]) > 0.90:
+    if abs(preds[0][0]-preds[0][1]) > 0.989:
         os.remove(img_path)
         return 0
     elif classes[0] == 0:
