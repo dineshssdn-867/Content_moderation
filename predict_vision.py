@@ -1,6 +1,5 @@
 import os
 import numpy as np
-import numpy as np
 from PIL import Image
 import tensorflow as tf
 from tensorflow.keras.utils import get_file
