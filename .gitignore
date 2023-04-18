@@ -1,0 +1,41 @@
+.DS_Store
+.env
+.flaskenv
+*.pyc
+*.pyo
+env/
+venv/
+.venv/
+env*
+dist/
+build/
+*.egg
+*.egg-info/
+.tox/
+.cache/
+.pytest_cache/
+.idea/
+docs/_build/
+.vscode
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+*,cover
+myenv
+
+# Extra folders
+.firebase
+public
+toxic_comment
+image_model
+
+# Extra files
+.firebaserc
+firebase.json
+*.jpg
+
+# files
+model_mobilenetv3large.h5
+toxic_comment-20230321T111647Z-001.zip
